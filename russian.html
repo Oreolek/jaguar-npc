@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Генератор неигровых персонажей</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link type="text/css" href="http://yandex.st/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="all">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Генератор неигровых персонажей</h1>
+      </header>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label for="sex" class="col-sm-4 control-label">Пол</label>
+          <div class="col-sm-8">
+            <div class="radio-inline"> <label> <input type="radio" name="sex" value="1"> М </label> </div>
+            <div class="radio-inline"> <label> <input type="radio" name="sex" value="2"> Ж </label> </div>
+            <div class="radio-inline"> <label> <input type="radio" name="sex" value="3" checked> Не важно </label> </div>
+            <div class="radio-inline"> <label> <input type="radio" name="sex" value="4"> Неопределённо </label> </div>
+            <div class="radio-inline"> <label> <input type="radio" name="sex" value="5"> Оба </label> </div>
+          </div>
+        </div>
+        <button class="btn btn-primary center-block">Сгенерировать</button>
+      </form>
+    </div>
+    <div class="container hidden">
+      <div class="row">
+        <label for="talk" class="col-sm-4 control-label">Как он говорит</label>
+        <div id="talk" class="col-sm-8"></div>
+      </div>
+      <div class="row">
+        <label for="talk" class="col-sm-4 control-label">Как он выглядит</label>
+        <div id="talk" class="col-sm-8"></div>
+      </div>
+      <div class="row">
+        <label for="talk" class="col-sm-4 control-label">Что он скрывает</label>
+        <div id="talk" class="col-sm-8"></div>
+      </div>
+    </div>
+    <script src="ready.min.js"></script>
+    <script src="chargen.js"></script>
+  </body>
+</html>
